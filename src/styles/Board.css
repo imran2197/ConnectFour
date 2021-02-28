@@ -2,7 +2,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 150px;
+}
+
+.image {
+    height: 175px;
+    margin-left: -100px;
 }
 
 button {

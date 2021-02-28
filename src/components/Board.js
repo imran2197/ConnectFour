@@ -81,6 +81,13 @@ class Board extends React.Component {
   
       return (
         <>
+          <div className="container">
+            <div className="quote-container">
+            <h1 className="name">CONNECT FOUR!</h1>
+            <p className="quote">Play with other players around the world.</p>
+            </div> 
+            <img className="image" src="./connect.png" alt="ConnectFour Logo" />
+          </div>
           <div className="main">
             {this.state.gameSelected &&
               <div className="Board">
@@ -107,22 +114,22 @@ class Board extends React.Component {
     for (let c = 0; c < 7; c++)
       for (let r = 0; r < 4; r++)
         if (checkLine(bs[c][r], bs[c][r+1], bs[c][r+2], bs[c][r+3]))
-          return bs[c][r] + ' wins!'
+          return "Congratulations! " +bs[c][r] + ' wins.'
   
     for (let r = 0; r < 6; r++)
       for (let c = 0; c < 4; c++)
         if (checkLine(bs[c][r], bs[c+1][r], bs[c+2][r], bs[c+3][r]))
-          return bs[c][r] + ' wins!'
+          return "Congratulations! " +bs[c][r] + ' wins.'
   
     for (let r = 0; r < 3; r++)
       for (let c = 0; c < 4; c++)
         if (checkLine(bs[c][r], bs[c+1][r+1], bs[c+2][r+2], bs[c+3][r+3]))
-          return bs[c][r] + ' wins!'
+          return "Congratulations! " +bs[c][r] + ' wins.'
   
     for (let r = 0; r < 4; r++)
       for (let c = 3; c < 6; c++)
         if (checkLine(bs[c][r], bs[c-1][r+1], bs[c-2][r+2], bs[c-3][r+3]))
-          return bs[c][r] + ' wins!'
+          return "Congratulations! " +bs[c][r] + ' wins.'
   
     return "";
   }
