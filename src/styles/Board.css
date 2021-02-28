@@ -1,0 +1,86 @@
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+
+button {
+    background-color: #5689db;
+    border: 1px solid #5689db;
+    border-radius: 3px;
+    display: inline-block;
+    color: #FFF;
+    font-size: 12pt;
+    padding: 7px 28px;
+    text-decoration: none;
+    margin: 5px;
+    transition: all 0.5s;
+    max-width: 160px;
+    min-width: 160px;
+}
+
+button:hover {
+    background-color: lightblue;
+    font-size: 14pt;
+}
+
+.Board {
+    display: flex;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 50px;
+}
+
+.Slat {}
+
+.Hole {
+    padding: 5px;
+    margin: 5px;
+    min-width: 30px;
+    min-height: 30px;
+    border: 5px solid lightblue;
+    border-radius: 50%;
+}
+
+.Hole div {
+    position: relative;
+    min-width: 30px;
+    min-height: 30px;
+    border-radius: 4px;
+    top: -400px;
+    transition: transform 0.5s;
+    border-radius: 50%;
+    padding: 20px;
+}
+
+.Red {
+    background-color: #FF456C;
+    transform: translateY(400px);
+}
+
+.Blue {
+    background-color: #2CC5FF;
+    transform: translateY(400px);
+}
+
+.winnerMessage {
+    margin: 20px;
+    font-size: 0pt;
+    font: 12pt;
+    opacity: 0;
+    transition: all 0.5s cubic-bezier(0.18, 0.99, 0.8, 1.17);
+}
+
+.appear {
+    opacity: 1;
+    font-size: 20pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reset {
+    display: flex;
+    justify-content: center;
+}
