@@ -81,12 +81,12 @@ class Board extends React.Component {
   
       return (
         <>
-          <div className="container">
-            <div className="quote-container">
-            <h1 className="name">CONNECT FOUR!</h1>
-            <p className="quote">Play with other players around the world.</p>
+          <div id="container">
+            <div id="quote-container">
+            <h1 id="name">CONNECT FOUR!</h1>
+            <p id="quote">Play with other players around the world.</p>
             </div> 
-            <img className="image" src="./connect.png" alt="ConnectFour Logo" />
+            <img id="image" src="./connect.png" alt="ConnectFour Logo" />
           </div>
           <div className="main">
             {this.state.gameSelected &&

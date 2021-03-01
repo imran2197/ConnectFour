@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 100px auto;
+    margin-top: 50px;
     width: 95%;
 }
 
@@ -141,4 +141,59 @@ hr {
 #comingSoon {
     position: relative;
     font-size: 10px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+
+    .board {
+        background-color: #ffffff;
+        width: 125%;
+        margin: auto;
+        margin-left: 50px;
+        height: 530px;
+        border-radius: 30px;
+        position: relative;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 75px;
+        margin-top: 50px;
+        width: 95%;
+    }
+
+    .img {
+        display: inline-block;
+        height: 110%;
+        margin: -40px -170px 0 0px;
+    }
+
+    .header {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -40px;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        width: 120.5%;
+        margin: auto;
+        margin-top: -50px;
+        margin-left: 51px;
+        padding: 26px 0 0px 15px;
+        background-color: #eeeeee;
+        height: 80px;
+        border-radius: 30px;
+    }
 }

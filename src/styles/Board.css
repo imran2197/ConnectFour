@@ -1,12 +1,32 @@
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px auto;
+    width: 95%;
+}
+
+#name {
+    color: #3d4276;
+    font-size: 25px;
+}
+
+#quote {
+    color: #949494;
+    width: 60%;
+    margin-top: -15px;
+    font-size: 20px;
+}
+
+#image {
+    height: 175px;
+    margin-left: -100px;
+}
+
 .main {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.image {
-    height: 175px;
-    margin-left: -100px;
 }
 
 button {
@@ -87,4 +107,80 @@ button:hover {
 .reset {
     display: flex;
     justify-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+    #container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        width: 100%;
+    }
+
+    #name {
+        color: #3d4276;
+        font-size: 25px;
+    }
+
+    #quote {
+        color: #949494;
+        width: 60%;
+        margin-top: -15px;
+        font-size: 20px;
+    }
+
+    #image {
+        height: 175px;
+        margin-right: -150px;
+    }
+
+    .Board {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        padding: 15px;
+        border-radius: 50px;
+        width: 120%;
+        margin-left: 100px;
+    }
+
+    .Hole {
+        margin: 0px;
+        min-width: 30px;
+        min-height: 30px;
+        border: 5px solid lightblue;
+        border-radius: 50%;
+        width: 45px;
+        height: 45px;
+    }
+
+    .Hole div {
+        position: relative;
+        min-width: 30px;
+        min-height: 30px;
+        border-radius: 4px;
+        top: -400px;
+        transition: transform 0.5s;
+        border-radius: 50%;
+        padding: 7px;
+    }
+
+    .appear {
+        opacity: 1;
+        font-size: 20pt;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: -90px;
+    }
+
+
+    .reset {
+        display: flex;
+        justify-content: center;
+        margin-right: -90px;
+    }
+
 }
